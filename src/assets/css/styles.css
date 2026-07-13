@@ -1,0 +1,366 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root{
+  --title-color:#111827;
+  --text-color:#4b5563;
+  --body-color:#f1f5f9;
+  --link-color:#2563eb;
+  --body-font:'Poppins',sans-serif;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:var(--body-font);
+  background:var(--body-color);
+  color:var(--text-color);
+  font-size:10px;
+  padding:1rem 0;
+}
+
+a{
+  text-decoration:none;
+  color:var(--link-color);
+}
+
+img{
+  max-width:100%;
+}
+
+.bd-container{
+  max-width:1000px;
+  margin:auto;
+  padding:0 .5rem;
+}
+
+.bd-grid{
+  display:grid;
+  gap:.5rem;
+}
+
+/* CV */
+
+#area-cv{
+  width:210mm;
+  background:#fff;
+}
+
+.resume{
+  display:grid;
+  grid-template-columns:.42fr 1fr;
+  background:#fff;
+  box-shadow:none;
+  border-radius:0;
+}
+
+.resume__left{
+  background:linear-gradient(180deg,#1e293b,#334155);
+  padding:1.3rem;
+}
+
+.resume__right{
+  padding:1.3rem;
+}
+
+.resume__left h1,
+.resume__left h2,
+.resume__left h3,
+.resume__left p,
+.resume__left span,
+.resume__left li{
+  color:#fff;
+}
+
+/* Sections */
+
+.section{
+  padding:.15rem 0;
+}
+
+.section-title{
+  font-size:.95rem;
+  font-weight:700;
+  margin-bottom:.5rem;
+  position:relative;
+}
+
+.section-title::after{
+  content:'';
+  position:absolute;
+  left:0;
+  bottom:-4px;
+  width:40px;
+  height:2px;
+  background:#2563eb;
+}
+
+/* Home */
+
+.home_data{
+  text-align:center;
+}
+
+.home_img{
+  width:90px;
+  height:90px;
+  border-radius:50%;
+  object-fit:cover;
+  border:4px solid #fff;
+  margin:auto;
+}
+
+.home_title{
+  margin-top:.4rem;
+  font-size:1.2rem;
+}
+
+.home_profession{
+  color:#cbd5e1;
+  font-size:.85rem;
+}
+
+.home_address{
+  margin-top:.5rem;
+}
+
+.home_information{
+  display:block;
+  margin:.2rem 0;
+}
+
+.social_link{
+  display:block;
+  color:#fff;
+  margin:.3rem 0;
+}
+
+/* Profile */
+
+.profile_description{
+  line-height:1.25;
+  font-size:.75rem;
+}
+
+/* Education + Experience */
+
+.education_content,
+.experience_content{
+  display:flex;
+  margin-bottom:.4rem;
+}
+
+.education_time,
+.experience_time{
+  margin-right:.6rem;
+}
+
+.education_rounder,
+.experience_rounder{
+  width:10px;
+  height:10px;
+  border-radius:50%;
+  background:#2563eb;
+}
+
+.education_line,
+.experience_line{
+  width:2px;
+  height:100%;
+  background:#cbd5e1;
+  margin-left:4px;
+}
+
+.education_title,
+.experience_title{
+  font-size:.82rem;
+  font-weight:600;
+}
+
+.experience_company{
+  color:#2563eb;
+  font-weight:500;
+}
+
+.experience_description{
+  font-size:.75rem;
+  line-height:1.25;
+}
+
+/* Skills */
+
+.skills_content,
+.languages_content{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+}
+
+.skills_name,
+.languages_name{
+  display:flex;
+  align-items:center;
+  margin-bottom:.2rem;
+}
+
+.skills_circle,
+.languages_circle
+{
+  width:6px;
+  height:6px;
+  border-radius:50%;
+  background:#2563eb;
+  margin-right:.4rem;
+}
+
+/* Certificates */
+
+.certificate_content{
+  margin-bottom:.45rem;
+}
+
+.certificate_title{
+  margin-bottom:.2rem;
+  font-size:.82rem;
+}
+
+.certificate_description{
+  font-size:.75rem;
+  line-height:1.25;
+}
+
+/* Interests */
+
+.interests_container{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:.3rem;
+}
+
+.interests_content{
+  padding:.25rem;
+  background:#f8fafc;
+  border-radius:6px;
+  text-align:center;
+}
+
+.interests_name{
+  font-size:.72rem;
+}
+/*=============== EXTRACURRICULAR ACTIVITIES ===============*/
+
+.extracurricular_activities{
+  margin-top:.5rem;
+}
+
+.extracurricular_activities h2{
+  font-size:.95rem;
+  font-weight:700;
+  margin-bottom:.5rem;
+  position:relative;
+}
+
+.extracurricular_activities h2::after{
+  content:'';
+  position:absolute;
+  left:0;
+  bottom:-4px;
+  width:40px;
+  height:2px;
+  background:#2563eb;
+}
+
+.extracurricular_activities_container_bd-grid{
+  display:grid;
+  gap:.35rem;
+}
+
+.extracurricular_activities_content{
+  display:flex;
+  align-items:center;
+}
+
+.extracurricular_activities_icon,
+.bx_bxs-camera_extracurricular_activities_icon{
+  font-size:.9rem;
+  color:#2563eb;
+  margin-right:.5rem;
+}
+
+.extracurricular_activities_name{
+  display:flex;
+  align-items:center;
+  font-size:.75rem;
+  color:var(--text-color);
+}
+
+.extracurricular_activities_circle{
+  width:6px;
+  height:6px;
+  border-radius:50%;
+  background:#2563eb;
+  margin-right:.4rem;
+  flex-shrink:0;
+}
+
+
+/* Download Button */
+
+#resume-button{
+  margin-top:.5rem;
+  padding:8px 16px;
+  border:none;
+  border-radius:8px;
+  background:#2563eb;
+  color:#fff;
+  cursor:pointer;
+  font-size:.75rem;
+  font-weight:600;
+}
+
+/* PDF */
+
+.section,
+.education_content,
+.experience_content,
+.certificate_content{
+  page-break-inside:avoid;
+  break-inside:avoid;
+}
+
+.scale-cv{
+  transform:scale(.68);
+  transform-origin:top center;
+}
+
+@media print{
+
+  body{
+    margin:0;
+    padding:0;
+    background:#fff;
+  }
+
+  .bd-container{
+    margin:0;
+    padding:0;
+    max-width:100%;
+  }
+
+  #area-cv{
+    width:210mm;
+  }
+
+  .resume{
+    box-shadow:none;
+    border-radius:0;
+  }
+
+}
